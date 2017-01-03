@@ -10,6 +10,10 @@ public class BitwiseOperation {
 		return status & ~flag;
 	}
 
+	public int toggle(int status, int flag) {
+		return status ^ flag;
+	}
+
 	public boolean isEnabled(int status, int flag) {
 		return (status & flag) != 0;
 	}
@@ -40,5 +44,13 @@ public class BitwiseOperation {
 
 		status = bitop.disable(status, bitop.option1);
 		System.out.println(bitop.isEnabled(status, bitop.option1));
+		
+		
+		System.out.println("toggle before : " + bitop.isEnabled(status, bitop.option3));
+		status = bitop.toggle(status, bitop.option3);
+		System.out.println("toggle after : " + bitop.isEnabled(status, bitop.option3));
+		status = bitop.toggle(status, bitop.option3);
+		System.out.println("toggle after : " + bitop.isEnabled(status, bitop.option3));
+		
 	}
 }

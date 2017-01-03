@@ -18,5 +18,6 @@ class GetInputData {
 		System.out.println("Enter an integer: ");
 		num = in.nextInt();
 		System.out.println("Input Integer is: " + num);
+		
 	}
 }

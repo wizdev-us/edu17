@@ -21,5 +21,4 @@ public class BigDecimalEx {
 		System.out.println("multiply = " + num3.multiply(num4));
 		
 	}
-
 }
