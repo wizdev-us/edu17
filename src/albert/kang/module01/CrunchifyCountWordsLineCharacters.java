@@ -58,7 +58,7 @@ public class CrunchifyCountWordsLineCharacters {
  
 	public static void main(String[] args) {
 		try {
-			String crunchifyFile = "./HelloWorld.java";
+			String crunchifyFile = "HelloWorld.java";
 			readFileAndPrintCounts(crunchifyFile);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
