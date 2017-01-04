@@ -3,7 +3,7 @@ package albert.kang.module01.thread;
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
-public class EduBlockingQueueEx {
+public class BwgBlockingQueue {
 
 	public static void main(String[] args) {
 
