@@ -1,7 +1,7 @@
 package albert.kang.module01.thread;
 
-import java.util.Vector;
 import java.util.Iterator;
+import java.util.Vector;
 
 public class QuizProducerConsumer {
 	private static Vector<Object> buffer = new Vector<Object>();
@@ -29,8 +29,15 @@ public class QuizProducerConsumer {
 		public void run() {
 			while (true) {
 				buffer.add(new Object());
-				if (buffer.size() > 10)
+				if (buffer.size() > 10) {
 					buffer.remove(buffer.size() - 1);
+				}
+
+				try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 		}
 	}

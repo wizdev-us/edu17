@@ -19,8 +19,8 @@ public class CrunchifyRetryNTimes {
 		// Change URL to
 		// http://crunchify.com/wp-content/uploads/code/json.sample2.txt to
 		// see retry logic in action..
-//		String myURL = "http://cdn.crunchify.com/wp-content/uploads/code/json.sample.txt";
-		String myURL = "http://crunchify.com/wp-content/uploads/code/json.sample2.txt";
+		String myURL = "http://cdn.crunchify.com/wp-content/uploads/code/json.sample.txt";
+//		String myURL = "http://crunchify.com/wp-content/uploads/code/json.sample2.txt";
 		CrunchifyRetryOnExceptionStrategy retry = new CrunchifyRetryOnExceptionStrategy();
 		while (retry.shouldRetry()) {
 			try {

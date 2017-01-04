@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class NewLockEx1 {
+public class BwgConditionVariable {
 	public static void main(String[] args) {
 		StringComm comm = new StringComm();
 		StringReader r = new StringReader(comm);
@@ -17,7 +17,6 @@ public class NewLockEx1 {
 			r.join();
 			w.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
