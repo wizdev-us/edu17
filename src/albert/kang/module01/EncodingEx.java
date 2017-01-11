@@ -1,5 +1,8 @@
 package albert.kang.module01;
+
 import java.io.UnsupportedEncodingException;
+
+import sub.SubTest;
 
 public class EncodingEx {
 
@@ -16,6 +19,20 @@ public class EncodingEx {
 		System.out.println("unicode byte length > " + uni.length);
 
 		System.out.println("file.encoding = " + System.getProperty("file.encoding"));
+		
+		new TestA().test();
+		new SubTest().print();
 	}
 
+}
+
+class TestA {
+
+	public void test() {
+		System.out.println("TEST");
+	}
+
+	public void test2() {
+		System.out.println("TEST");
+	}
 }
