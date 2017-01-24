@@ -34,12 +34,4 @@ public class Sandwich extends PortableLunch {
   public static void main(String[] args) {
     new Sandwich();
   }
-} /* Output:
-Meal()
-Lunch()
-PortableLunch()
-Bread()
-Cheese()
-Lettuce()
-Sandwich()
-*///:~
+} 

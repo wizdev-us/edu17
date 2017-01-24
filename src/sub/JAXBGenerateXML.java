@@ -50,17 +50,18 @@ public class JAXBGenerateXML {
 			// to place in the marshalled XML output
 			jaxbMarshaller.setProperty(Marshaller.JAXB_SCHEMA_LOCATION,
 					"http://www.mysamplecode.com/ws/v10 OrderService_v10.xsd");
-			try {
-				// override for custom namespace prefix
-				jaxbMarshaller.setProperty("com.sun.xml.internal.bind.namespacePrefixMapper", new MyNamespaceMapper());
-			} catch (PropertyException e) {
-				System.out.println(e);
-			}
+//			try {
+//				// override for custom namespace prefix
+//				jaxbMarshaller.setProperty("com.sun.xml.internal.bind.namespacePrefixMapper", new MyNamespaceMapper());
+//			} catch (PropertyException e) {
+//				System.out.println(e);
+//			}
 
 			// send to console
 			jaxbMarshaller.marshal(orderHeader, System.out);
 			// send to file system
-			OutputStream os = new FileOutputStream("D:\\MyOrder.xml");
+//			OutputStream os = new FileOutputStream("D:\\MyOrder.xml");
+			OutputStream os = new FileOutputStream(System.getProperty("user.dir") + "\\MyOrder.xml");
 			jaxbMarshaller.marshal(orderHeader, os);
 
 		} catch (JAXBException e) {

@@ -1,5 +1,4 @@
-package albert.kang.module01;
-
+package albert.kang.module00;
 //: exceptions/ExceptionSilencer.java
 
 public class ExceptionSilencer {
@@ -12,4 +11,4 @@ public class ExceptionSilencer {
       return;
     }
   }
-} 
+} ///:~

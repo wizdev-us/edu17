@@ -16,7 +16,8 @@ public class JAXBGenerateObject {
 		try {
 
 			// create file input stream
-			InputStream is = new FileInputStream("D:\\MyOrder.xml");
+//			InputStream is = new FileInputStream("D:\\MyOrder.xml");
+			InputStream is = new FileInputStream(System.getProperty("user.dir") + "\\MyOrder.xml");
 			// XML and Java binding
 			JAXBContext jaxbContext = JAXBContext.newInstance(OrderHeader.class);
 
