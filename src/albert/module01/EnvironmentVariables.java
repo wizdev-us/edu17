@@ -11,4 +11,4 @@ public class EnvironmentVariables {
 		
 		System.out.println("myclasspath = " + System.getenv().get("CLASSPATH"));
 	}
-} /* (Execute to see output) */// :~
+}

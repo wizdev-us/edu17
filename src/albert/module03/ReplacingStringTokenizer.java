@@ -18,7 +18,4 @@ public class ReplacingStringTokenizer {
 		while (scanner.hasNext())
 			System.out.print(scanner.next() + " ");
 	}
-} /*
-	 * Output: But I'm not dead yet! I feel happy! [But, I'm, not, dead, yet!,
-	 * I, feel, happy!] But I'm not dead yet! I feel happy!
-	 */// :~
+} 
