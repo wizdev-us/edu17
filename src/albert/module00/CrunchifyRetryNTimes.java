@@ -1,4 +1,4 @@
-package albert.util;
+package albert.module00;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
