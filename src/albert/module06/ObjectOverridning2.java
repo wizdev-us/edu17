@@ -6,9 +6,7 @@ class Human {
 	}
 }
 
-class OverrideEx extends Human {
-
-	@Override
+class ObjectOverridning2 extends Human {
 	public void eat() {
 		System.out.println("Boy is eating");
 	}
@@ -21,7 +19,7 @@ class OverrideEx extends Human {
 	}
 
 	public static void main(String args[]) {
-		OverrideEx obj = new OverrideEx();
+		ObjectOverridning2 obj = new ObjectOverridning2();
 		obj.eat();
 		obj.move();
 	}
