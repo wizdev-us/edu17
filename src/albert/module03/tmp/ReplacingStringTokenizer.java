@@ -1,7 +1,8 @@
-package albert.module03;
+package albert.module03.tmp;
 
-//: strings/ReplacingStringTokenizer.java
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class ReplacingStringTokenizer {
 	public static void main(String[] args) {
@@ -18,4 +19,4 @@ public class ReplacingStringTokenizer {
 		while (scanner.hasNext())
 			System.out.print(scanner.next() + " ");
 	}
-} 
+}
