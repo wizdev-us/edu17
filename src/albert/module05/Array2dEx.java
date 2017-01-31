@@ -8,7 +8,6 @@ public class Array2dEx {
 		for (int i = 2; i < number.length; i++) {
 			for (int j = 1; j < number[i].length; j++) {
 				number[i][j] = i * j;
-				System.out.println(i);
 			}
 		}
 
@@ -19,6 +18,5 @@ public class Array2dEx {
 			}
 			System.out.println("");
 		}
-
 	}
 }
