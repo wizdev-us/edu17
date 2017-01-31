@@ -4,7 +4,7 @@ enum Signal {
 	GREEN, YELLOW, RED,
 }
 
-public class TrafficLight {
+public class TrafficLightEnum {
 	Signal color = Signal.RED;
 
 	public void change() {
@@ -26,7 +26,7 @@ public class TrafficLight {
 	}
 
 	public static void main(String[] args) {
-		TrafficLight t = new TrafficLight();
+		TrafficLightEnum t = new TrafficLightEnum();
 		for (int i = 0; i < 7; i++) {
 			System.out.println(t);
 			t.change();
