@@ -1,4 +1,4 @@
-package albert.module01;
+package albert.module00;
 
 public class FinalizeEx {
 	
