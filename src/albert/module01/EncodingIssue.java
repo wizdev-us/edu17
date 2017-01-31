@@ -3,7 +3,7 @@ package albert.module01;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
-public class EncodingEx {
+public class EncodingIssue {
 
 	public static void main(String[] args) throws UnsupportedEncodingException {
 

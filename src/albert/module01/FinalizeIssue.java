@@ -1,16 +1,16 @@
 package albert.module01;
 
-public class FinalizeEx {
+public class FinalizeIssue {
 
 	String objName;
 
-	public FinalizeEx(String name) {
+	public FinalizeIssue(String name) {
 		objName = name;
 	}
 
 	public static void main(String[] args) {
-		FinalizeEx obj1 = new FinalizeEx("inst01");
-		FinalizeEx obj2 = new FinalizeEx("inst02");
+		FinalizeIssue obj1 = new FinalizeIssue("inst01");
+		FinalizeIssue obj2 = new FinalizeIssue("inst02");
 
 		// obj1 = null;
 		// obj2 = null;
