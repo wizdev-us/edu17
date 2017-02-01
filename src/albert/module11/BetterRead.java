@@ -3,11 +3,11 @@ package albert.module11;
 //: strings/BetterRead.java
 import java.util.*;
 
-import albert.module10.SimpleRead;
+import albert.module10.StringReaderEX;
 
 public class BetterRead {
   public static void main(String[] args) {
-    Scanner stdin = new Scanner(SimpleRead.input);
+    Scanner stdin = new Scanner(StringReaderEX.input);
     System.out.println("What is your name?");
     String name = stdin.nextLine();
     System.out.println(name);

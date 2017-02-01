@@ -1,6 +1,5 @@
-package albert.module10;
+package albert.module11;
 
-//: io/MappedIO.java
 import java.nio.*;
 import java.nio.channels.*;
 import java.io.*;
@@ -87,7 +86,4 @@ public class MappedIO {
 		for (Tester test : tests)
 			test.runTest();
 	}
-} /*
-	 * Output: (90% match) Stream Write: 0.56 Mapped Write: 0.12 Stream Read:
-	 * 0.80 Mapped Read: 0.07 Stream Read/Write: 5.32 Mapped Read/Write: 0.02
-	 */// :~
+}

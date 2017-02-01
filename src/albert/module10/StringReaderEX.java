@@ -1,9 +1,8 @@
 package albert.module10;
 
-//: strings/SimpleRead.java
 import java.io.*;
 
-public class SimpleRead {
+public class StringReaderEX {
 	public static BufferedReader input = new BufferedReader(new StringReader("Sir Robin of Camelot\n22 1.61803"));
 
 	public static void main(String[] args) {
@@ -25,8 +24,4 @@ public class SimpleRead {
 			System.err.println("I/O exception");
 		}
 	}
-} /*
-	 * Output: What is your name? Sir Robin of Camelot How old are you? What is
-	 * your favorite double? (input: <age> <double>) 22 1.61803 Hi Sir Robin of
-	 * Camelot. In 5 years you will be 27. My favorite double is 0.809015.
-	 */// :~
+}
