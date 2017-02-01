@@ -1,4 +1,3 @@
-// Generators that produce random values.
 package albert.util;
 
 import java.util.*;

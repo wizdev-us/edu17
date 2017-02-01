@@ -1,24 +1,22 @@
 package albert.module06;
 
-import static albert.util.Print.*;
-
 class Game {
 	Game(int i) {
-		print("Game constructor");
+		System.out.println("Game constructor");
 	}
 }
 
 class BoardGame extends Game {
 	BoardGame(int i) {
 		super(i);
-		print("BoardGame constructor");
+		System.out.println("BoardGame constructor");
 	}
 }
 
 public class ChessConstructors extends BoardGame {
 	ChessConstructors() {
 		super(11);
-		print("Chess constructor");
+		System.out.println("Chess constructor");
 	}
 
 	public static void main(String[] args) {

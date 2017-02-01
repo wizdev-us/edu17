@@ -2,7 +2,7 @@ package albert.util;
 
 import java.io.*;
 
-public class Print {
+public class Consol {
 	public static void print(Object obj) {
 		System.out.println(obj);
 	}

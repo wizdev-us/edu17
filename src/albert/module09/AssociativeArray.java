@@ -1,7 +1,5 @@
 package albert.module09;
 
-import static albert.util.Print.*;
-
 import java.util.Arrays;
 
 public class AssociativeArray<K, V> {
@@ -49,9 +47,9 @@ public class AssociativeArray<K, V> {
 		try {
 			map.put("extra", "object"); // Past the end
 		} catch (ArrayIndexOutOfBoundsException e) {
-			print("Too many objects!");
+			System.out.println("Too many objects!");
 		}
-		print(map);
-		print(map.get("ocean"));
+		System.out.println(map);
+		System.out.println(map.get("ocean"));
 	}
 }
