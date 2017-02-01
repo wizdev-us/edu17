@@ -54,7 +54,4 @@ public class AssociativeArray<K, V> {
 		print(map);
 		print(map.get("ocean"));
 	}
-} /*
-	 * Output: Too many objects! sky : blue grass : green ocean : dancing tree :
-	 * tall earth : brown sun : warm dancing
-	 */// :~
+}

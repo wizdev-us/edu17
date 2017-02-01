@@ -1,5 +1,3 @@
-//: net/mindview/util/CountingMapData.java
-// Unlimited-length Map containing sample data.
 package albert.util;
 
 import java.util.*;
