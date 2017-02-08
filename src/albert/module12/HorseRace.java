@@ -96,4 +96,4 @@ public class HorseRace {
 		}
 		new HorseRace(nHorses, pause);
 	}
-} /* (Execute to see output) */// :~
+}

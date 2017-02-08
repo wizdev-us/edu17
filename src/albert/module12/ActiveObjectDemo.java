@@ -2,15 +2,12 @@ package albert.module12;
 
 import java.util.concurrent.*;
 
-
 import java.util.*;
 
 public class ActiveObjectDemo {
 	private ExecutorService ex = Executors.newSingleThreadExecutor();
 	private Random rand = new Random(47);
 
-	// Insert a random delay to produce the effect
-	// of a calculation time:
 	private void pause(int factor) {
 		try {
 			TimeUnit.MILLISECONDS.sleep(100 + rand.nextInt(factor));
@@ -65,9 +62,4 @@ public class ActiveObjectDemo {
 		}
 		d1.shutdown();
 	}
-} /*
-	 * Output: (85% match) All asynch calls made starting 0.0 + 0.0 starting 0.2
-	 * + 0.2 0.0 starting 0.4 + 0.4 0.4 starting 0.6 + 0.6 0.8 starting 0.8 +
-	 * 0.8 1.2 starting 0 + 0 1.6 starting 1 + 1 0 starting 2 + 2 2 starting 3 +
-	 * 3 4 starting 4 + 4 6 8
-	 */// :~
+}

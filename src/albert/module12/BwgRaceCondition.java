@@ -101,7 +101,7 @@ class BwgBankAccount {
 			return true;
 		}
 	}
-	
+
 	public boolean withdrawAmount(double amount) {
 		if (amount > accountBalance) {
 			return false;

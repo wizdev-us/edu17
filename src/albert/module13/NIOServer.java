@@ -10,12 +10,7 @@ import java.nio.channels.SocketChannel;
 import java.util.Iterator;
 import java.util.Set;
  
-/**
- * @author Crunchify.com
- *
- */
- 
-public class CrunchifyNIOServer {
+public class NIOServer {
  
 	@SuppressWarnings("unused")
 	public static void main(String[] args) throws IOException {
@@ -24,17 +19,17 @@ public class CrunchifyNIOServer {
 		Selector selector = Selector.open(); // selector is open here
  
 		// ServerSocketChannel: selectable channel for stream-oriented listening sockets
-		ServerSocketChannel crunchifySocket = ServerSocketChannel.open();
-		InetSocketAddress crunchifyAddr = new InetSocketAddress("localhost", 1111);
+		ServerSocketChannel bwgSocket = ServerSocketChannel.open();
+		InetSocketAddress bwgAddr = new InetSocketAddress("localhost", 1111);
  
 		// Binds the channel's socket to a local address and configures the socket to listen for connections
-		crunchifySocket.bind(crunchifyAddr);
+		bwgSocket.bind(bwgAddr);
  
 		// Adjusts this channel's blocking mode.
-		crunchifySocket.configureBlocking(false);
+		bwgSocket.configureBlocking(false);
  
-		int ops = crunchifySocket.validOps();
-		SelectionKey selectKy = crunchifySocket.register(selector, ops, null);
+		int ops = bwgSocket.validOps();
+		SelectionKey selectKy = bwgSocket.register(selector, ops, null);
  
 		// Infinite loop..
 		// Keep server running
@@ -45,40 +40,40 @@ public class CrunchifyNIOServer {
 			selector.select();
  
 			// token representing the registration of a SelectableChannel with a Selector
-			Set<SelectionKey> crunchifyKeys = selector.selectedKeys();
-			Iterator<SelectionKey> crunchifyIterator = crunchifyKeys.iterator();
+			Set<SelectionKey> bwgKeys = selector.selectedKeys();
+			Iterator<SelectionKey> bwgIterator = bwgKeys.iterator();
  
-			while (crunchifyIterator.hasNext()) {
-				SelectionKey myKey = crunchifyIterator.next();
+			while (bwgIterator.hasNext()) {
+				SelectionKey myKey = bwgIterator.next();
  
 				// Tests whether this key's channel is ready to accept a new socket connection
 				if (myKey.isAcceptable()) {
-					SocketChannel crunchifyClient = crunchifySocket.accept();
+					SocketChannel bwgClient = bwgSocket.accept();
  
 					// Adjusts this channel's blocking mode to false
-					crunchifyClient.configureBlocking(false);
+					bwgClient.configureBlocking(false);
  
 					// Operation-set bit for read operations
-					crunchifyClient.register(selector, SelectionKey.OP_READ);
-					log("Connection Accepted: " + crunchifyClient.getLocalAddress() + "\n");
+					bwgClient.register(selector, SelectionKey.OP_READ);
+					log("Connection Accepted: " + bwgClient.getLocalAddress() + "\n");
  
 					// Tests whether this key's channel is ready for reading
 				} else if (myKey.isReadable()) {
 					
-					SocketChannel crunchifyClient = (SocketChannel) myKey.channel();
-					ByteBuffer crunchifyBuffer = ByteBuffer.allocate(256);
-					crunchifyClient.read(crunchifyBuffer);
-					String result = new String(crunchifyBuffer.array()).trim();
+					SocketChannel bwgClient = (SocketChannel) myKey.channel();
+					ByteBuffer bwgBuffer = ByteBuffer.allocate(256);
+					bwgClient.read(bwgBuffer);
+					String result = new String(bwgBuffer.array()).trim();
  
 					log("Message received: " + result);
  
-					if (result.equals("Crunchify")) {
-						crunchifyClient.close();
-						log("\nIt's time to close connection as we got last company name 'Crunchify'");
+					if (result.equals("bwg")) {
+						bwgClient.close();
+						log("\nIt's time to close connection as we got last company name 'bwg'");
 						log("\nServer will keep running. Try running client again to establish new connection");
 					}
 				}
-				crunchifyIterator.remove();
+				bwgIterator.remove();
 			}
 		}
 	}

@@ -19,7 +19,8 @@ public class BwgRunnableThread {
 			}
 		};
 
-		new Thread(thread).start();;
+		new Thread(thread).start();
+		;
 		System.out.println("Main() Program Exited...\n");
 	}
 }

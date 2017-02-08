@@ -3,24 +3,19 @@ package albert.module03;
 public class QuizStringReplaceDelete {
 
 	public static void main(String[] args) {
-		System.out.println("Output for replaceAllChar(): " + replaceAllChar("Development", "e", "*"));
-		System.out.println("Output for deleteAllNonDigit(): " + deleteAllNonDigit("#2zs1dfs23$&%^(!9@!"));
-		System.out.println("Output for replaceCharAt(): " + replaceCharAt("eBay Google Paypal", 10, '$'));
-		System.out.println("Output for removeChar(): " + removeChar("eBay Google Paypal", 'a'));
-		System.out.println("Output for removeCharAt(): " + removeCharAt("eBay Google Paypal", 5));
+		System.out.println("removeChar() " + removeChar("BankwareGlobal.com", 'a'));
+		System.out.println("replaceCharAt() " + replaceCharAt("BankwareGlobal.com", 10, '$'));
+		System.out.println("deleteAllNonDigit() " + deleteAllNonDigit("#2xzs1dxfs23$&%^(!9@!"));
+		System.out.println("replaceAllChar() " + replaceAllChar("BankwareGlobal.com", "a", "*"));
+		System.out.println("removeCharAt() " + removeCharAt("BankwareGlobal.com", 5));
 	}
 
-	// Output for replaceAllChar(): D*v*lopm*nt
-	// Output for deleteAllNonDigit(): 21239
-	// Output for replaceCharAt(): eBay Googl$ Paypal
-	// Output for removeChar(): eBy Google Pypl
-	// Output for removeCharAt(): eBay oogle Paypal
 	
-	
-	
-	
-	
-	
+//	removeChar() BnkwreGlobl.com	
+//	replaceCharAt() BankwareGl$bal.com	
+//	deleteAllNonDigit() 21239	
+//	replaceAllChar() B*nkw*reGlob*l.com	
+//	removeCharAt() BankwreGlobal.com	
 	
 	
 	

@@ -34,7 +34,7 @@ public class InitMemoryMap {
 		System.out.println(cv);
 		System.out.println(initMap2.iv);
 		
-//		System.out.println("in Main " + InitValue.staticValue);
+		System.out.println("in Main " + InitValue.staticValue);
 		
 		InitValue initValue = new InitValue();
 		System.out.println(InitValue.staticValue);

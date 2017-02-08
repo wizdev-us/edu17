@@ -9,15 +9,15 @@ public class QuizCountWordsLineCharacters {
 
 	public static void main(String[] args) {
 		try {
-			readFileAndPrintCounts("src\\albert\\module11\\QuizCountWordsLineCharacters.java");
+			readAndPrintCounts("src\\albert\\module11\\QuizCountWordsLineCharacters.java");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 	}
 	
-//	* Total Characters: 970
-//	* Total Words: 152
-//	* Toal Lines: 44
+//	* Total Characters: 1016
+//	* Total Words: 167
+//	* Toal Lines: 63
 	
 	
 	
@@ -35,7 +35,7 @@ public class QuizCountWordsLineCharacters {
 	
 	
 	
-	public static void readFileAndPrintCounts(String crunchifyFile) throws FileNotFoundException {
+	public static void readAndPrintCounts(String crunchifyFile) throws FileNotFoundException {
 
 		int totalWords = 0;
 		int totalLines = 0;
