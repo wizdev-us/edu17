@@ -12,8 +12,8 @@ public class FinalizeIssue {
 		FinalizeIssue obj1 = new FinalizeIssue("inst01");
 		FinalizeIssue obj2 = new FinalizeIssue("inst02");
 
-		// obj1 = null;
-		// obj2 = null;
+		obj1 = null;
+		obj2 = null;
 
 		System.out.println("프로그램을 종료합니다.");
 

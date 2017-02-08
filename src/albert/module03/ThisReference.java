@@ -1,7 +1,4 @@
 package albert.module03;
-//: initialization/Leaf.java
-
-// Simple use of the "this" keyword.
 
 public class ThisReference {
 	int i = 0;
